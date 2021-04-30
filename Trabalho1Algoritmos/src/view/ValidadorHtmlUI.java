@@ -212,7 +212,10 @@ public class ValidadorHtmlUI extends javax.swing.JDialog {
                     i++;
                 }
             } else {
-                JOptionPane.showMessageDialog(null, "Arquivo está com formato inválido!");
+                if (tfArquivo.getText().trim().equals(""))
+                    JOptionPane.showMessageDialog(null, "Selecione um arquivo!");
+                else
+                    JOptionPane.showMessageDialog(null, "Arquivo está com formato inválido!");
             }
 
         } catch (FileNotFoundException e) {

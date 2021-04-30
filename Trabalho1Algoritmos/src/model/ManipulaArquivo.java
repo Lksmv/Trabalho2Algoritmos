@@ -102,7 +102,7 @@ public class ManipulaArquivo {
         setArquivo(caminhoArquivo);
         lerArquivo();
         if (!pilha.estaVazia()) {
-            texto += "Existe tag(s) que não foram fechadas!" + "\n";
+            texto += "Existe tag(s) que não foram fechadas, verificar!" + "\n";
         }
         if (texto.equals("")) {
             texto = "O arquivo está bem formatado!";
